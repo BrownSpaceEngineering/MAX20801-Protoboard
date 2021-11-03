@@ -1,0 +1,267 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 60D3959D
+P 5100 2900
+AR Path="/60D3766B/60D3959D" Ref="R1"  Part="1" 
+AR Path="/60E55AF2/60D3959D" Ref="R10"  Part="1" 
+AR Path="/60E55B95/60D3959D" Ref="R13"  Part="1" 
+F 0 "R1" H 5170 2946 50  0000 L CNN
+F 1 "0.4" H 5170 2855 50  0000 L CNN
+F 2 "" V 5030 2900 50  0001 C CNN
+F 3 "~" H 5100 2900 50  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 60D39FA1
+P 5100 3800
+AR Path="/60D3766B/60D39FA1" Ref="D1"  Part="1" 
+AR Path="/60E55AF2/60D39FA1" Ref="D4"  Part="1" 
+AR Path="/60E55B95/60D39FA1" Ref="D6"  Part="1" 
+F 0 "D1" V 5146 3720 50  0000 R CNN
+F 1 "D" V 5055 3720 50  0000 R CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "~" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 60D3A622
+P 5450 4150
+AR Path="/60D3766B/60D3A622" Ref="R2"  Part="1" 
+AR Path="/60E55AF2/60D3A622" Ref="R11"  Part="1" 
+AR Path="/60E55B95/60D3A622" Ref="R14"  Part="1" 
+F 0 "R2" V 5243 4150 50  0000 C CNN
+F 1 "10k" V 5334 4150 50  0000 C CNN
+F 2 "" V 5380 4150 50  0001 C CNN
+F 3 "~" H 5450 4150 50  0001 C CNN
+	1    5450 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 60D3AF16
+P 4450 3400
+AR Path="/60D3766B/60D3AF16" Ref="C1"  Part="1" 
+AR Path="/60E55AF2/60D3AF16" Ref="C6"  Part="1" 
+AR Path="/60E55B95/60D3AF16" Ref="C8"  Part="1" 
+F 0 "C1" H 4565 3446 50  0000 L CNN
+F 1 "10u" H 4565 3355 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 4488 3250 50  0001 C CNN
+F 3 "~" H 4450 3400 50  0001 C CNN
+	1    4450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 60D3BAF2
+P 5350 3400
+AR Path="/60D3766B/60D3BAF2" Ref="D2"  Part="1" 
+AR Path="/60E55AF2/60D3BAF2" Ref="D5"  Part="1" 
+AR Path="/60E55B95/60D3BAF2" Ref="D7"  Part="1" 
+F 0 "D2" V 5396 3320 50  0000 R CNN
+F 1 "D" V 5305 3320 50  0000 R CNN
+F 2 "" H 5350 3400 50  0001 C CNN
+F 3 "~" H 5350 3400 50  0001 C CNN
+	1    5350 3400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 60D3C4FA
+P 5600 3700
+AR Path="/60D3766B/60D3C4FA" Ref="R3"  Part="1" 
+AR Path="/60E55AF2/60D3C4FA" Ref="R12"  Part="1" 
+AR Path="/60E55B95/60D3C4FA" Ref="R15"  Part="1" 
+F 0 "R3" V 5393 3700 50  0000 C CNN
+F 1 "10k" V 5484 3700 50  0000 C CNN
+F 2 "" V 5530 3700 50  0001 C CNN
+F 3 "~" H 5600 3700 50  0001 C CNN
+	1    5600 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5100 3050 5100 3650
+Wire Wire Line
+	5100 3950 5100 4150
+Wire Wire Line
+	5100 4150 5300 4150
+Wire Wire Line
+	5600 4150 5800 4150
+Wire Wire Line
+	5800 4150 5800 3800
+Wire Wire Line
+	5800 3800 5900 3800
+Wire Wire Line
+	5750 3700 5900 3700
+Wire Wire Line
+	5450 3700 5350 3700
+Wire Wire Line
+	5350 3700 5350 3550
+Wire Wire Line
+	5900 3600 5800 3600
+Wire Wire Line
+	5800 3600 5800 3250
+Wire Wire Line
+	5800 3250 5350 3250
+Wire Wire Line
+	5350 3100 5350 3250
+Connection ~ 5350 3250
+Wire Wire Line
+	5350 3100 4450 3100
+Wire Wire Line
+	4450 3100 4450 3250
+Wire Wire Line
+	5350 3100 5900 3100
+Wire Wire Line
+	5900 3100 5900 3500
+Connection ~ 5350 3100
+$Comp
+L power:GND #PWR01
+U 1 1 60D3E83C
+P 4450 3750
+AR Path="/60D3766B/60D3E83C" Ref="#PWR01"  Part="1" 
+AR Path="/60E55AF2/60D3E83C" Ref="#PWR011"  Part="1" 
+AR Path="/60E55B95/60D3E83C" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 4450 3500 50  0001 C CNN
+F 1 "GND" H 4455 3577 50  0000 C CNN
+F 2 "" H 4450 3750 50  0001 C CNN
+F 3 "" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rprog1
+U 1 1 60D3F60B
+P 7000 4000
+AR Path="/60D3766B/60D3F60B" Ref="Rprog1"  Part="1" 
+AR Path="/60E55AF2/60D3F60B" Ref="Rprog2"  Part="1" 
+AR Path="/60E55B95/60D3F60B" Ref="Rprog3"  Part="1" 
+F 0 "Rprog1" H 7070 4046 50  0000 L CNN
+F 1 "1.2k" H 7070 3955 50  0000 L CNN
+F 2 "" V 6930 4000 50  0001 C CNN
+F 3 "~" H 7000 4000 50  0001 C CNN
+	1    7000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60D3F9C6
+P 7000 4150
+AR Path="/60D3766B/60D3F9C6" Ref="#PWR02"  Part="1" 
+AR Path="/60E55AF2/60D3F9C6" Ref="#PWR012"  Part="1" 
+AR Path="/60E55B95/60D3F9C6" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 7000 3900 50  0001 C CNN
+F 1 "GND" H 7005 3977 50  0000 C CNN
+F 2 "" H 7000 4150 50  0001 C CNN
+F 3 "" H 7000 4150 50  0001 C CNN
+	1    7000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 3800 7000 3800
+Wire Wire Line
+	7000 3800 7000 3850
+Wire Wire Line
+	6700 3500 7000 3500
+Wire Wire Line
+	7000 3500 7000 2850
+Wire Wire Line
+	4450 3550 4450 3750
+$Comp
+L BSEPowerSystems-rescue:TP4056 U6
+U 1 1 60F78CB9
+P 6300 3650
+AR Path="/60E55AF2/60F78CB9" Ref="U6"  Part="1" 
+AR Path="/60D3766B/60F78CB9" Ref="U1"  Part="1" 
+AR Path="/60E55B95/60F78CB9" Ref="U7"  Part="1" 
+F 0 "U1" H 6300 4025 50  0000 C CNN
+F 1 "TP4056" H 6300 3934 50  0000 C CNN
+F 2 "" H 6100 3800 50  0001 C CNN
+F 3 "" H 6100 3800 50  0001 C CNN
+	1    6300 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7450 3700 7450 4150
+Wire Wire Line
+	7450 3700 7850 3700
+Connection ~ 7450 3700
+Wire Wire Line
+	7450 3600 7450 3700
+Wire Wire Line
+	6700 3600 7450 3600
+Wire Wire Line
+	7850 3700 7850 3250
+Wire Wire Line
+	6700 3700 7450 3700
+Wire Wire Line
+	7200 2850 7850 2850
+Connection ~ 7200 2850
+Wire Wire Line
+	7200 2850 7200 3000
+Wire Wire Line
+	7000 2850 7200 2850
+$Comp
+L Device:Battery Battery1
+U 1 1 60D3EF92
+P 7850 3050
+AR Path="/60D3766B/60D3EF92" Ref="Battery1"  Part="1" 
+AR Path="/60E55AF2/60D3EF92" Ref="Battery2"  Part="1" 
+AR Path="/60E55B95/60D3EF92" Ref="Battery3"  Part="1" 
+F 0 "Battery1" H 7958 3096 50  0000 L CNN
+F 1 "3.7" H 7958 3005 50  0000 L CNN
+F 2 "" V 7850 3110 50  0001 C CNN
+F 3 "~" V 7850 3110 50  0001 C CNN
+	1    7850 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 60D3E226
+P 7200 3300
+AR Path="/60D3766B/60D3E226" Ref="#PWR03"  Part="1" 
+AR Path="/60E55AF2/60D3E226" Ref="#PWR013"  Part="1" 
+AR Path="/60E55B95/60D3E226" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 7200 3050 50  0001 C CNN
+F 1 "GND" H 7205 3127 50  0000 C CNN
+F 2 "" H 7200 3300 50  0001 C CNN
+F 3 "" H 7200 3300 50  0001 C CNN
+	1    7200 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 60D3DB2E
+P 7200 3150
+AR Path="/60D3766B/60D3DB2E" Ref="C2"  Part="1" 
+AR Path="/60E55AF2/60D3DB2E" Ref="C7"  Part="1" 
+AR Path="/60E55B95/60D3DB2E" Ref="C9"  Part="1" 
+F 0 "C2" H 7315 3196 50  0000 L CNN
+F 1 "10u" H 7315 3105 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H5.0mm_P2.00mm" H 7238 3000 50  0001 C CNN
+F 3 "~" H 7200 3150 50  0001 C CNN
+	1    7200 3150
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 4150
+Wire Wire Line
+	7450 4150 7000 4150
+$EndSCHEMATC

@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 9
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Power_Management:LTC4412xS6 U2
+U 1 1 60D433A3
+P 6050 3500
+F 0 "U2" H 6050 4081 50  0000 C CNN
+F 1 "LTC4412xS6" H 6050 3990 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering" H 6700 3150 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/4412fb.pdf" H 8150 3300 50  0001 C CNN
+	1    6050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60D43667
+P 5100 3800
+F 0 "C3" H 5215 3846 50  0000 L CNN
+F 1 "0.1u" H 5215 3755 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H 5138 3650 50  0001 C CNN
+F 3 "~" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6050 3900 6050 3950
+Wire Wire Line
+	6050 3950 5650 3950
+Wire Wire Line
+	5650 3600 5650 3950
+Connection ~ 5650 3950
+Wire Wire Line
+	5650 3950 5100 3950
+Wire Wire Line
+	5650 3400 5100 3400
+Wire Wire Line
+	5100 3400 5100 3650
+$Comp
+L power:GND #PWR04
+U 1 1 60D43D5F
+P 5650 3950
+F 0 "#PWR04" H 5650 3700 50  0001 C CNN
+F 1 "GND" H 5655 3777 50  0000 C CNN
+F 2 "" H 5650 3950 50  0001 C CNN
+F 3 "" H 5650 3950 50  0001 C CNN
+	1    5650 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3600 7500 3600
+$Comp
+L Device:C C4
+U 1 1 60D81D3B
+P 6900 2950
+F 0 "C4" H 7015 2996 50  0000 L CNN
+F 1 "0.1u" H 7015 2905 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H 6938 2800 50  0001 C CNN
+F 3 "~" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60D826B7
+P 6900 3150
+F 0 "#PWR05" H 6900 2900 50  0001 C CNN
+F 1 "GND" H 6905 2977 50  0000 C CNN
+F 2 "" H 6900 3150 50  0001 C CNN
+F 3 "" H 6900 3150 50  0001 C CNN
+	1    6900 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 3100 6900 3150
+Wire Wire Line
+	5100 3400 5100 2700
+Connection ~ 5100 3400
+Wire Wire Line
+	6450 3400 6600 3400
+Wire Wire Line
+	6600 3400 6600 1950
+Wire Wire Line
+	6600 1950 6900 1950
+Wire Wire Line
+	6900 1950 6900 2800
+Connection ~ 6600 1950
+$Comp
+L Device:R R5
+U 1 1 60D83D5C
+P 8450 2150
+F 0 "R5" H 8520 2196 50  0000 L CNN
+F 1 "R" H 8520 2105 50  0000 L CNN
+F 2 "" V 8380 2150 50  0001 C CNN
+F 3 "~" H 8450 2150 50  0001 C CNN
+	1    8450 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 60D840F4
+P 8450 2700
+F 0 "R6" H 8520 2746 50  0000 L CNN
+F 1 "R" H 8520 2655 50  0000 L CNN
+F 2 "" V 8380 2700 50  0001 C CNN
+F 3 "~" H 8450 2700 50  0001 C CNN
+	1    8450 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 60D8479C
+P 9150 2700
+F 0 "C5" H 9265 2746 50  0000 L CNN
+F 1 "C" H 9265 2655 50  0000 L CNN
+F 2 "" H 9188 2550 50  0001 C CNN
+F 3 "~" H 9150 2700 50  0001 C CNN
+	1    9150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 1950 8450 1950
+Wire Wire Line
+	8450 1950 8450 2000
+Connection ~ 6900 1950
+Wire Wire Line
+	8450 2300 8450 2450
+Wire Wire Line
+	8450 2850 8450 2950
+$Comp
+L power:GND #PWR07
+U 1 1 60D85737
+P 8450 3100
+F 0 "#PWR07" H 8450 2850 50  0001 C CNN
+F 1 "GND" H 8455 2927 50  0000 C CNN
+F 2 "" H 8450 3100 50  0001 C CNN
+F 3 "" H 8450 3100 50  0001 C CNN
+	1    8450 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2950 9150 2950
+Wire Wire Line
+	9150 2950 9150 2850
+Connection ~ 8450 2950
+Wire Wire Line
+	8450 2950 8450 3100
+Wire Wire Line
+	9150 2550 9150 2450
+Wire Wire Line
+	9150 2450 8450 2450
+Connection ~ 8450 2450
+Wire Wire Line
+	8450 2450 8450 2550
+$Comp
+L Device:D D3
+U 1 1 60D862A6
+P 8100 1600
+F 0 "D3" H 8100 1383 50  0000 C CNN
+F 1 "D" H 8100 1474 50  0000 C CNN
+F 2 "" H 8100 1600 50  0001 C CNN
+F 3 "~" H 8100 1600 50  0001 C CNN
+	1    8100 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 1600 8450 1600
+Wire Wire Line
+	8450 1600 8450 1750
+Connection ~ 8450 1950
+Text GLabel 7800 1600 0    50   Input ~ 0
+UMD_CHG
+Wire Wire Line
+	7800 1600 7950 1600
+Text HLabel 8700 1750 2    50   Input ~ 0
+LTC_OUT
+Wire Wire Line
+	8450 1750 8700 1750
+Connection ~ 8450 1750
+Wire Wire Line
+	8450 1750 8450 1950
+Text HLabel 4800 2700 0    50   Input ~ 0
+LTC_IN
+Wire Wire Line
+	4800 2700 5100 2700
+Connection ~ 5100 2700
+Wire Wire Line
+	5100 2700 5100 1950
+$Comp
+L Device:Q_DUAL_PMOS_G1S2G2D2S1D1 Q1
+U 1 1 60E68FAB
+P 6050 2050
+F 0 "Q1" V 6392 2050 50  0000 C CNN
+F 1 "Q_DUAL_PMOS_G1S2G2D2S1D1" V 6301 2050 50  0000 C CNN
+F 2 "" H 6100 2050 50  0001 C CNN
+F 3 "~" H 6100 2050 50  0001 C CNN
+	1    6050 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 1950 6600 1950
+Wire Wire Line
+	5100 1950 5850 1950
+Wire Wire Line
+	6050 2250 6050 3100
+Wire Wire Line
+	7500 3200 7500 3300
+$Comp
+L power:+3.3V #PWR06
+U 1 1 60D81157
+P 7500 3200
+F 0 "#PWR06" H 7500 3050 50  0001 C CNN
+F 1 "+3.3V" H 7515 3373 50  0000 C CNN
+F 2 "" H 7500 3200 50  0001 C CNN
+F 3 "" H 7500 3200 50  0001 C CNN
+	1    7500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60D4A7E7
+P 7500 3450
+F 0 "R4" H 7570 3496 50  0000 L CNN
+F 1 "R" H 7570 3405 50  0000 L CNN
+F 2 "" V 7430 3450 50  0001 C CNN
+F 3 "~" H 7500 3450 50  0001 C CNN
+	1    7500 3450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

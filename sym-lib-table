@@ -1,3 +1,6 @@
 (sym_lib_table
   (lib (name MAX20801)(type Legacy)(uri ${KIPRJMOD}/MAX20801.lib)(options "")(descr ""))
+  (lib (name TP4056)(type Legacy)(uri ${KIPRJMOD}/TP4056.lib)(options "")(descr "")(disabled))
+  (lib (name tp4056)(type Legacy)(uri C:/Users/jenna/Downloads/tp4056.lib)(options "")(descr "")(disabled))
+  (lib (name BSEPowerSystems-rescue)(type Legacy)(uri ${KIPRJMOD}/BSEPowerSystems-rescue.lib)(options "")(descr ""))
 )
