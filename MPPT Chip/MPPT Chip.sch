@@ -48,19 +48,13 @@ Wire Wire Line
 Wire Wire Line
 	5300 5000 5650 5000
 Wire Wire Line
-	5550 3800 5250 3800
-Wire Wire Line
 	5250 3800 5250 5100
 Wire Wire Line
 	5250 5100 5650 5100
 Wire Wire Line
-	5550 3900 5200 3900
-Wire Wire Line
 	5200 3900 5200 5200
 Wire Wire Line
 	5200 5200 5650 5200
-Wire Wire Line
-	5550 4000 5150 4000
 Wire Wire Line
 	5150 4000 5150 5300
 Wire Wire Line
@@ -80,8 +74,6 @@ Wire Wire Line
 Wire Wire Line
 	5550 4150 5550 4550
 Wire Wire Line
-	5550 4550 6650 4550
-Wire Wire Line
 	6650 4550 6650 5200
 Wire Wire Line
 	6650 5200 6150 5200
@@ -99,4 +91,46 @@ Wire Wire Line
 	7000 3300 7000 4900
 Wire Wire Line
 	7000 4900 6150 4900
+$Comp
+L power:GND #PWR?
+U 1 1 618833C8
+P 5450 5600
+F 0 "#PWR?" H 5450 5350 50  0001 C CNN
+F 1 "GND" H 5455 5427 50  0000 C CNN
+F 2 "" H 5450 5600 50  0001 C CNN
+F 3 "" H 5450 5600 50  0001 C CNN
+	1    5450 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 4000 5150 4000
+Wire Wire Line
+	5550 3900 5500 3900
+Wire Wire Line
+	5550 3800 5450 3800
+Wire Wire Line
+	5500 3900 5500 5600
+Wire Wire Line
+	5500 5600 5450 5600
+Connection ~ 5500 3900
+Wire Wire Line
+	5500 3900 5200 3900
+Wire Wire Line
+	5450 3800 5450 5600
+Connection ~ 5450 3800
+Wire Wire Line
+	5450 3800 5250 3800
+Connection ~ 5450 5600
+Wire Wire Line
+	5550 4550 5600 4550
+Wire Wire Line
+	5600 4550 5600 5600
+Wire Wire Line
+	5600 5600 5500 5600
+Connection ~ 5600 4550
+Wire Wire Line
+	5600 4550 6650 4550
+Connection ~ 5500 5600
+Text Label 5800 4550 0    50   ~ 0
+GND
 $EndSCHEMATC
